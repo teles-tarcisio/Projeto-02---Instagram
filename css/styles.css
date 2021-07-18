@@ -172,23 +172,50 @@ body {
   border-radius: 50%;
 }
 
-.post-top ion-icon {
-
+.post-top ion-icon {  /* ellipsis */
+  font-size: 12px;
+  margin-left: auto;
+  margin-right: 18.5px;
+  color: #262626;
 }
 
 .post-img {
   width: calc(100% - 2px);
-
+}
+.post-bottom {
+  height: 76px;
 }
 
 .post-icons {
-
+  height: 50%;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.post-icons ion-icon {
+  margin-top: 14px;
+  margin-left: 18px;
 }
 
-.post-comments {
+.post-likes {
+  height: 50%;
+  display: flex;
+  align-items: center;
 
 }
+.post-likes img {
+  width: 20px;
+  height: 20px;
+  margin-left: 18px;
+  margin-right: 5px;
+}
 
+/*    =====SEPARADOR VERTICAL===== */
+.main-vert-separator {
+  width: 28px;
+  height: auto;
+  background-color: lightskyblue;
+}
 
 /*    =====LADO DIREITO=====    */
 .right-column {

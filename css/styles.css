@@ -105,41 +105,41 @@ body {
 .stories-ribbon {
   width: 100%;
   height: 118px;
-  margin: 0 auto 0 0;
-  border: 7px dashed yellow;
-  border-radius: 3px;
-  padding-left: 18px;
-  padding-top: 18px;
   display: flex;
+  gap: 18px;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  margin: 0 auto 0 0;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  position: relative;
+  padding: 18px;
+    
   background-color: #ffffff;
-}
+  
+  overflow: hidden; /*TODO !! */
+  }
 
 /*    =====STORY UNICO=====   */
 .story { /* avatar + background + profile-name */
-  margin: 0 5px 14px 5px;
   position: relative;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
   width: 78px;  /* reason: longer text */ 
   height: 86px;
-  border: 1px dotted orange;
   text-align: center;
+
 }
 .story-bgframe { /* round colored border */
   width: 66px;
-  height: 66px;
   position: absolute;
   top: 0px;
   border-radius: 50%;
 }
 .story .who-avatar {  /* avatar */
   width: 56px;
-  height: 56px;
   position: absolute;
   top: 5px;
   border-radius: 50%;
@@ -152,13 +152,13 @@ body {
 }
 
 .stories-arrow {
-  margin: 0 8px 0 auto;
-  /*float: right;
-  position: right;  */
-  width: 30%;
+  width: 26px;
   height: 26px;
-  background-color: yellow;
-  z-index: 30;
+  position: absolute;
+  right: 9px;
+  top: 40%;
+  box-shadow: 0px 4px 4px 1px #9e9e9e;
+  border-radius: 50%;
   
 }
 
@@ -353,3 +353,22 @@ body {
   font-weight: 400;
   color: #c7c7c7;
 }
+
+/*    =====LAYOUT SEM SIDEBAR=====   */
+@media (max-width: 935px) {
+  .right-column {
+    display: none;
+  }
+
+  .top-bar {
+    width: 100vw;
+    height: 54px;
+  }
+  
+  .main-container {
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+  }
+}
+

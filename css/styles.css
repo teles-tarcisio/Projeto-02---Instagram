@@ -106,7 +106,7 @@ body {
   width: 100%;
   height: 118px;
   margin: 0 auto 0 0;
-  border: 1px solid yellow;
+  border: 7px dashed yellow;
   border-radius: 3px;
   padding-left: 18px;
   padding-top: 18px;
@@ -149,6 +149,17 @@ body {
   bottom: 0px;
   color: #262626;
   font-size: 12px;
+}
+
+.stories-arrow {
+  margin: 0 8px 0 auto;
+  /*float: right;
+  position: right;  */
+  width: 30%;
+  height: 26px;
+  background-color: yellow;
+  z-index: 30;
+  
 }
 
 /*    =====COLUNA DE POSTS=====   */
@@ -214,10 +225,8 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 28px;
-  
+  font-size: 28px; 
 }
-
 .post-icons ion-icon {
   margin: 0 18px 0 0;
 }
@@ -252,7 +261,7 @@ body {
 /*    =====LADO DIREITO=====    */
 .right-column {
   width: 293px;
-  border: 3px dashed blue;
+  border: 1px dashed blue;
   display: flex;
   flex-direction: column;
 }
@@ -263,7 +272,6 @@ body {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  background-color: lightyellow;
 }
 
 .sidebar-myprofile {
@@ -271,6 +279,15 @@ body {
   display: flex;
   align-items: center;
   margin: 24px auto 24px 0;
+  font-size: 14px;
+}
+.sidebar-myprofile h1 {
+  font-weight: 500;
+  color: #262626;
+}
+.sidebar-myprofile p{
+  font-weight: 300;
+  color: #8e8e8e;
 }
 .sidebar-myprofile img {
   width: 56px;
@@ -282,18 +299,18 @@ body {
 .sidebar-suggestions {
   /* "sugestoes/vertudo" */
   width: 100%;
-  background-color: red;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 0 17px 0;
 }
 .sidebar-suggestions h1 {
-  order: 0;
-  margin: 0 auto 0 0;
+  color: #8e8e8e;
 }
 .sidebar-suggestions p {
-  order: 1;
-  margin: 0 0 0 auto;
+  color: #262626;
 }
 
 .sidebar-profile {
@@ -304,10 +321,13 @@ body {
 }
 
 .sidebar-profile img {
-  width: 56px;
-  height: 56px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   margin-right: 17px;
+}
+.sidebar-profile h1 {
+
 }
 
 

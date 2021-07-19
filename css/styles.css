@@ -261,7 +261,6 @@ body {
 /*    =====LADO DIREITO=====    */
 .right-column {
   width: 293px;
-  border: 1px dashed blue;
   display: flex;
   flex-direction: column;
 }
@@ -318,6 +317,7 @@ body {
   height: fit-content;
   display: flex;
   align-items: center;
+  margin: 0 0 15px 0;
 }
 .sidebar-profile img {
   width: 32px;
@@ -339,3 +339,17 @@ body {
   color: #8e8e8e;
 }
 
+.right-side-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 33px auto 0 0;
+}
+
+.right-side-text p {
+  margin-bottom: 18px;
+  font-size: 11px;
+  font-weight: 400;
+  color: #c7c7c7;
+}

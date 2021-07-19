@@ -26,26 +26,19 @@ body {
 }
 
 .logo-insta {
-  order: 0;
   height: 28px;
   width: 28px;
   margin-left: 15px;
 }
 
 .vert-spacer-topbar {
-  order: 1;
   height: 22px;
   width: 1px;
   margin: 0 10px 0 10px;
   background-color: #dbdbdb;
 }
 
-.lettering-insta {
-  order: 2;
-}
-
 .search-box {
-  order: 3;
   width: 215px;
   height: 28px;
   border-radius: 3px;
@@ -58,29 +51,24 @@ body {
   margin: 0px 175px 0px 175px;
 }
 .search-box p {
-  order: 4;
   font-style: normal;
   font-size: 12px;
   color: #979797;
 }
 
 .top-bar .icon-paperplane {
-  order: 5;
   margin-right: 25px;
 }
 
 .top-bar .icon-compass {
-  order: 6;
   margin-right: 25px;
 }
 
 .top-bar .icon-heart {
-  order: 7;
   margin-right: 25px;
 }
 
 .top-bar .icon-person {
-  order: 8;
   margin-right: 15px;
 }
 
@@ -188,19 +176,16 @@ body {
 }
 
 .post-top .who-avatar {  /* avatar */
-  order: 0;
   width: 32px;
   height: 32px;
   border-radius: 50%;
   margin: 0 7.5px 0 17px;
 }
 .post-top p {
-  order: 1;
   margin: 0 0 0 7.5px;
 }
 
 .post-top ion-icon {  /* ellipsis */
-  order: 3;
   font-size: 12px;
   margin: 0 0 0 auto;
   color: #262626;
@@ -354,6 +339,10 @@ body {
   color: #c7c7c7;
 }
 
+.bottom-mobile {
+  display: none
+}
+
 /*    =====LAYOUT SEM SIDEBAR=====   */
 @media (max-width: 935px) {
   .right-column {
@@ -370,5 +359,111 @@ body {
     align-items: center;
     justify-content: center;
   }
+  .bottom-mobile {
+    display: none
+  }
 }
 
+/*    =====LAYOUT MOBILE=====   */
+@media (max-width: 614px) {
+  .top-bar {
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+  }
+  
+  .top-bar ion-icon {
+    font-size: 20px;
+  }
+  
+  .logo-insta {
+    margin-left: 15px;
+  }
+  
+  .vert-spacer-topbar {
+    display: none;
+  }
+  
+  .lettering-insta {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .top-bar .icon-paperplane {
+    margin-right: 25px;
+  }
+  
+  .search-box {
+    display: none;
+  }
+    
+  
+  
+  .top-bar .icon-compass {
+    display: none;
+  }
+  
+  .top-bar .icon-heart {
+    display: none;
+  }
+  
+  .top-bar .icon-person {
+    display: none;
+  }
+
+  .main-container {
+    width: 100vw;
+    margin: 54px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /*    =====LADO ESQUERDO=====   */
+  .left-column {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /*    =====RIBBON DE STORIES=====   */
+  .stories-ribbon {
+    width: 100vw;
+    height: 118px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 18px;
+    position: relative;
+    border: none;
+    background-color: none;
+    overflow: hidden; /*TODO !! */
+  }
+
+  .stories-arrow {
+    display: none;
+  }
+
+  .bottom-mobile {
+    width: 100vw;
+    height: 54px;
+    position: fixed;
+    bottom: 0px;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 30;
+    }
+
+    .bottom-mobile ion-icon {
+      font-size: 20px;
+      margin: 0 20px;
+    }
+  }
+}

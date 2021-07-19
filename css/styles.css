@@ -1,5 +1,5 @@
 body {
-  background-color: lightgrey;
+  background-color: #fafafa;
   font-family: 'Roboto', sans-serif;
   }
 
@@ -9,16 +9,16 @@ body {
 
 /*    =====BARRA DO TOPO=====   */
 .top-bar {
-  width: 1366px;
+  width: 100%;
   height: 54px;
   position: fixed;
   top: 0px;
-  /*margin: 0px auto 0px auto;*/
   background-color: #ffffff;
-  border: 2px solid red;
+  border: 1px solid #dbdbdb;
   display: flex;
-  justify-content: center;;
+  justify-content: center;
   align-items: center;
+  z-index: 30;
 }
 
 .top-bar ion-icon {
@@ -26,22 +26,25 @@ body {
 }
 
 .logo-insta {
-  margin: 0px 5px 0px 5px;
+  order: 0;
+  height: 28px;
+  width: 28px;
 }
 
 .vert-spacer-topbar {
+  order: 1;
   height: 22px;
   width: 1px;
+  margin: 0 10px 0 10px;
   background-color: #dbdbdb;
-  margin: 0px 5px 0px 5px;
 }
 
 .lettering-insta {
-  margin: 0px 5px 0px 5px;
-
+  order: 2;
 }
 
 .search-box {
+  order: 3;
   width: 215px;
   height: 28px;
   border-radius: 3px;
@@ -51,29 +54,34 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin: 0px 214px 0px 214px;
+}
+.search-box p {
+  order: 4;
   font-style: normal;
   font-size: 12px;
   color: #979797;
-  margin: 0px 205px 0px 205px;
 }
 
-.top-bar ion-icon {
-  margin: 0px 10px 0px 10px;
+.top-bar .icon-paperplane {
+  order: 5;
+  margin-right: 25px;
 }
 
-/*
-.icon-compass {
-  margin: 0px 10px 0px 10px;
+.top-bar .icon-compass {
+  order: 6;
+  margin-right: 25px;
 }
 
-.icon-heart {
-  margin: 0px 10px 0px 10px;
+.top-bar .icon-heart {
+  order: 7;
+  margin-right: 25px;
 }
 
-.icon-person {
-  margin: 0px 10px 0px 10px;
+.top-bar .icon-person {
+  order: 8;
+  margin-right: 5px;
 }
-*/
 
 /*    =====CONTEUDO DA PAGINA=====    */
 .main-container {
@@ -81,12 +89,12 @@ body {
   margin: 88px auto 0px auto;
   border: 2px dashed blue;
   display: flex;
+  flex-direction: row;
 }
 
 /*    =====LADO ESQUERDO=====   */
 .left-column {
   width: 614px;
-  margin-top: 24px;
   display: flex;
   flex-direction: column;
   border: 2px dashed green;
@@ -94,8 +102,9 @@ body {
 
 /*    =====RIBBON DE STORIES=====   */
 .stories-box {
-  width: 614px;
+  width: 100%;
   height: 118px;
+  margin: 0px auto 24px 0;
   border: 1px solid yellow;
   padding-left: 18px;
   display: flex;
@@ -103,14 +112,11 @@ body {
   justify-content: flex-start;
   align-items: center;
   background-color: #ffffff;
-  margin-bottom: 24px;
 }
 
 /*    =====STORY UNICO=====   */
 .story { /* avatar + background + profile-name */
-  margin-top: 18px;
-  margin-bottom: 14px;
-  margin: 18px 5px auto 5px;
+  margin: 18px 5px 14px 5px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -152,30 +158,35 @@ body {
   */
 
 .post-frame {
-  width: 614px;
+  width: 100%;
   height: 749px;
   background-color: lightyellow;
   border-radius: 3px;
   margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .post-top {
   height: 60px;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  
 }
 
 .post-top .who-avatar {  /* avatar */
   width: 32px;
   height: 32px;
-  margin-left: 17px;
   border-radius: 50%;
 }
 
 .post-top ion-icon {  /* ellipsis */
   font-size: 12px;
-  margin-left: auto;
   margin-right: 18.5px;
+  justify-self: end;
   color: #262626;
 }
 
@@ -184,12 +195,13 @@ body {
 }
 .post-bottom {
   height: 76px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .post-icons {
   height: 50%;
-  display: flex;
-  align-items: center;
   font-size: 18px;
 }
 .post-icons ion-icon {
@@ -198,7 +210,7 @@ body {
 }
 
 .post-likes {
-  height: 50%;
+  margin-bottom: 14px;
   display: flex;
   align-items: center;
 
@@ -211,14 +223,16 @@ body {
 }
 
 /*    =====SEPARADOR VERTICAL===== */
+/*
 .main-vert-separator {
   width: 28px;
   height: auto;
   background-color: lightskyblue;
 }
-
+*/
 /*    =====LADO DIREITO=====    */
 .right-column {
   width: 293px;
   border: 2px dashed brown;
+  margin-left: 28px;
 }

@@ -230,18 +230,23 @@ body {
   margin-left: 440px;
 }
 
-.post-likes {  
+.post-likes {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: center;
-
+  font-size: 14px;
+  font-weight: 300;
+}
+.post-likes span {
+  font-weight: 500;
 }
 .post-likes img {
   width: 20px;
   height: 20px;
-  margin-left: 18px;
-  margin-right: 5px;
+  border-radius: 50%;
+  margin: 0 5px 0 18px;
 }
 
 /*    =====LADO DIREITO=====    */
@@ -265,10 +270,30 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: mediumaquamarine;
+  margin: 24px auto 24px 0;
 }
 .sidebar-myprofile img {
-  
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin-right: 17px;
+}
+
+.sidebar-suggestions {
+  /* "sugestoes/vertudo" */
+  width: 100%;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sidebar-suggestions h1 {
+  order: 0;
+  margin: 0 auto 0 0;
+}
+.sidebar-suggestions p {
+  order: 1;
+  margin: 0 0 0 auto;
 }
 
 .sidebar-profile {
@@ -277,4 +302,12 @@ body {
   align-items: center;
   background-color: mediumaquamarine;
 }
+
+.sidebar-profile img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin-right: 17px;
+}
+
 

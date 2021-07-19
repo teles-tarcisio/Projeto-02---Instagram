@@ -97,32 +97,34 @@ body {
   width: 614px;
   display: flex;
   flex-direction: column;
-  border: 2px dashed green;
+  border-radius: 3px;
 }
 
 /*    =====RIBBON DE STORIES=====   */
-.stories-box {
+.stories-ribbon {
   width: 100%;
   height: 118px;
-  margin: 0px auto 24px 0;
+  margin: 0 auto 0 0;
   border: 1px solid yellow;
+  border-radius: 3px;
   padding-left: 18px;
+  padding-top: 18px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
 }
 
 /*    =====STORY UNICO=====   */
 .story { /* avatar + background + profile-name */
-  margin: 18px 5px 14px 5px;
+  margin: 0 5px 14px 5px;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 78px;
+  width: 78px;  /* reason: longer text */ 
   height: 86px;
   border: 1px dotted orange;
   text-align: center;
@@ -149,44 +151,46 @@ body {
 }
 
 /*    =====COLUNA DE POSTS=====   */
-/*
-.posts-spacer {
-  width: 100%;
-  height: 60px;
-  border: 2px dashed blue;
-  }
-  */
 
 .post-frame {
   width: 100%;
   height: 749px;
-  background-color: lightyellow;
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
   border-radius: 3px;
-  margin-bottom: 60px;
+  margin: 24px 0 36px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .post-top {
+  width: 100%;
   height: 60px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  
+  justify-content: center;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .post-top .who-avatar {  /* avatar */
+  order: 0;
   width: 32px;
   height: 32px;
   border-radius: 50%;
+  margin: 0 7.5px 0 17px;
+}
+.post-top p {
+  order: 1;
+  margin: 0 0 0 7.5px;
 }
 
 .post-top ion-icon {  /* ellipsis */
+  order: 3;
   font-size: 12px;
-  margin-right: 18.5px;
-  justify-self: end;
+  margin: 0 0 0 auto;
   color: #262626;
 }
 

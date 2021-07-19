@@ -315,11 +315,10 @@ body {
 
 .sidebar-profile {
   width: 100%;
+  height: fit-content;
   display: flex;
   align-items: center;
-  background-color: mediumaquamarine;
 }
-
 .sidebar-profile img {
   width: 32px;
   height: 32px;
@@ -327,7 +326,16 @@ body {
   margin-right: 17px;
 }
 .sidebar-profile h1 {
-
+  font-weight: 500;
+  color: #262626;
 }
-
+.sidebar-profile h2 {
+  font-weight: 500;
+  color: #139ef2;
+  margin: 0 0 0 auto;
+}
+.sidebar-profile p {
+  font-weight: 400;
+  color: #8e8e8e;
+}
 

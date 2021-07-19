@@ -194,6 +194,11 @@ body {
 .post-img {
   width: 100%;
 }
+.post-frame video {
+  margin: auto;
+  width: 100%
+}
+
 .post-bottom {
   width: 100%;
   height: 76px;

@@ -1,14 +1,16 @@
-body {
-  background-color: #fafafa;
-  font-family: 'Roboto', sans-serif;
-  }
-
 * {
   box-sizing: border-box;
 }
 
+body {
+  background-color: #fafafa;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
 /*    =====BARRA DO TOPO=====   */
-.top-bar {
+.top-fixed-ribbon {
   width: 100%;
   height: 54px;
   position: fixed;
@@ -16,68 +18,54 @@ body {
   background-color: #ffffff;
   border: 1px solid #dbdbdb;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   z-index: 30;
 }
 
-.top-bar ion-icon {
+.top-bar-content {
+  width: 935px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.top-bar-content ion-icon {
   font-size: 28px;
 }
 
-.logo-insta {
-  height: 28px;
-  width: 28px;
-  margin-left: 15px;
+.top-bar_logos {
+  margin: 0 auto 0 0;
+  display: flex;
+  align-items: center;
 }
 
-.vert-spacer-topbar {
+.logo-vert-spacer {
   height: 22px;
   width: 1px;
   margin: 0 10px 0 10px;
   background-color: #dbdbdb;
 }
+.top-bar-content input {
+  margin: 0 auto;
+  text-align: center;
 
-.search-box {
-  width: 215px;
-  height: 28px;
-  border-radius: 3px;
-  background-color: #fafafa;
-  border: 2px solid #dbdbdb;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 0px 175px 0px 175px;
 }
-.search-box p {
-  font-style: normal;
-  font-size: 12px;
-  color: #979797;
+.top-bar_icons {
+  margin: 0 0 0 auto;
 }
-
-.top-bar .icon-paperplane {
-  margin-right: 25px;
-}
-
-.top-bar .icon-compass {
-  margin-right: 25px;
-}
-
-.top-bar .icon-heart {
-  margin-right: 25px;
-}
-
-.top-bar .icon-person {
-  margin-right: 15px;
-}
+/*    =====BARRA DO TOPO=====   */
 
 /*    =====CONTEUDO DA PAGINA=====    */
 .main-container {
-  width: 935px;
-  margin: 88px auto 0px auto;
+  width: 100%;
+  margin: 88px auto 0 auto;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  
 }
 
 /*    =====LADO ESQUERDO=====   */
